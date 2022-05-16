@@ -20,21 +20,86 @@
     <p>Un poco más de texto</p>
     <!-- Etiqueta de comentarios
     no aparece en el explorador -->
+
+    <!--párrafo con salto de línea-->
     <p>Este texto es <span>mucho más largo</span>
     y es para mostrar <br><br> la etiqueta de span!</p>
+
+    <!--Hipervínculo-->
     <a target="_blank" href="https://www.google.com">Ir a Google <br></a>
+
+    <!--Imagen-->
     <img src="img/dibujo.jpg" width="400" alt=""/>
+
+    <!--Formulario-->
     <form action="/formulario." method="post">
         <label for="nombre"> Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ej: Laura"/>
+        <input value="valor" type="text" id="nombre" name="nombre" 
+        placeholder="Ej: Laura"/>
         <br>
         <label for="apellido"> Apellido</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Ej: Perez"/>
+        <input value="por defecto" type="text" id="apellido" name="apellido" 
+        placeholder="Ej: Perez"/>
         <br>
         <label for="comentario">Comentario</label> <br>
-        <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Ingrese comentario"></textarea>
+        <textarea name="comentario" id="comentario" cols="50" rows="10" 
+        placeholder="Ingrese comentario"> Esto es un valor por defecto</textarea>
         <br>
-        <input type="submit" name="" id="">
+        <button type="button"> <img src="img/dibujo.jpg" width="60"/> Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
     </form>
+
+    <!--Lista-->
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista  ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-alpha;">Sub elemento 1</li>
+                <li style="list-style-type:lower-alpha;">Sub elemento 2</li>
+                <li style="list-style-type:lower-alpha;">Sub elemento 3</li>
+                <li style="list-style-type:lower-alpha;">Sub elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!--Tabla-->
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola Beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>19,90$</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz muy feliz</td>
+                <td>29,90$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 49,80$</td>
+        </tfoot>
+    </table>
 </body>
 </html>
